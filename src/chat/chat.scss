@@ -13,20 +13,16 @@
   %chatContentWrapper {
     background: transparent;
     &:before {
-      display: none;
+      box-shadow: none;
     }
-  }
-  %messages {
-    background: transparent;
-    backface-visibility: hidden;
   }
 
   // BASE
   %chatBase {
     border-bottom: 1px solid hsla(0, 0%, 100%, 0.02);
-    >h1 {
+    > h1 {
       color: hsla(0, 0%, 100%, 0.3);
-      >strong {
+      > strong {
         color: hsla(0, 0%, 100%, 0.5);
         font-weight: 700;
       }
@@ -35,7 +31,7 @@
 }
 
 // GATED CHANNEL
-%chatContentWrapper>%scrollerWrap {
+%chatContentWrapper > %scrollerWrap {
   background: rgba(0, 0, 0, 0.5);
 }
 %chatGatedContent {
@@ -122,7 +118,8 @@
 }
 
 // CHAT LOADING
-%chatLoadingWrapper {
+%chatLoadingWrapper,
+%chatLoadingWrapperCozy {
   background-color: transparent;
 }
 

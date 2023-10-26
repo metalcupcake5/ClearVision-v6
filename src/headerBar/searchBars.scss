@@ -1,7 +1,6 @@
 /* HEADER BAR SEARCH BARS */
 %chatSearch %chatSearchBar,
-%librarySearch,
-%storeSearch {
+%librarySearch {
   width: 140px;
   height: 28px;
   padding: 2px;
@@ -11,12 +10,11 @@
 }
 %chatSearchFocused %chatSearchBar,
 %chatSearchOpen %chatSearchBar,
-%librarySearchFocused,
-%storeSearchFocused {
+%librarySearchFocused {
   width: 240px;
 }
 %chatSearch {
-  >%chatSearchRoot {
+  > %chatSearchRoot {
     color: #fff;
   }
   %chatSearchPlaceholder {
@@ -55,31 +53,10 @@
     }
   }
 }
-%storeSearch {
-  %storeSearchBar {
-    background: transparent;
-  }
-  %librarySearchInput {
-    color: #fff;
-    &::placeholder {
-      color: hsla(0, 0%, 100%, 0.3);
-    }
-  }
-  %storeSearchIcon {
-    color: hsla(0, 0%, 100%, 0.5);
-    transition: all 0.15s ease-in-out;
-  }
-  %storeSearchIconLayout:hover {
-    %storeSearchIconClear {
-      color: #fff;
-    }
-  }
-}
-
-.container-2McqkF {
-  .queryContainer-ZunrLZ {
+.container_d6dad3 {
+  .queryContainer_c359fe {
     .keybindShortcutSearchPopout-pt_bn5 {
-      &>span {
+      & > span {
         display: none;
       }
     }

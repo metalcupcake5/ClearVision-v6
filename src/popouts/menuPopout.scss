@@ -1,6 +1,8 @@
 /* MENU POPOUT */
 %menuPopout {
   background-color: rgba(0, 0, 0, 0.8);
+  animation: cv-menu-fold-y 0.2s cubic-bezier(0.2, 0.6, 0.5, 1.1);
+  transform-origin: 50% 0;
   %menuPopoutItem {
     color: hsla(0, 0%, 100%, 0.7);
     transition: all 0.15s ease-in-out;
@@ -52,7 +54,7 @@
     box-shadow: 0 0 2px 2px $hover-color;
   }
 }
-.premiumUpsell-2K2V_c {
+.premiumUpsell_e1bfd9 {
   background-color: transparent;
 }
 
@@ -80,7 +82,7 @@
 %deleteServerCheckbox {
   %deleteServerCheckboxInner {
     %deleteServerCheckboxElement {
-      &:checked+span {
+      &:checked + span {
         background-color: $main-color;
         border-color: $main-color;
       }

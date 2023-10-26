@@ -30,10 +30,6 @@
     color: #fff;
     text-shadow: 0 0 3px #000;
     font-family: cv('font.main');
-    &%headerBarTitleMuted {
-      color: hsla(0, 0%, 100%, 0.3);
-      text-shadow: none;
-    }
   }
   %headerBarTopic {
     color: hsla(0, 0%, 100%, 0.5);
@@ -58,13 +54,8 @@
   padding: 2px 3px;
   box-sizing: content-box;
 }
-%headerBarIconWrapper>svg>foreignObject {
+%headerBarIconWrapper > svg > foreignObject {
   mask: none;
-}
-%headerBarInput {
-  &:focus {
-    background-color: hsla(0, 0%, 100%, 0.1);
-  }
 }
 
 // MODAL POPOUT
